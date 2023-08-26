@@ -6,6 +6,7 @@ function GamesByGenresId({ gameList }) {
   });
   return (
     <div className="font-bold text-[30px] dark:text-white mt-5 ">
+      <h2>Popular Game</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-5 ">
         {gameList.map((item) => (
           <div className="bg-[#76a8f75e] p-2 rounded-lg pb-10 h-full hover:scale-110 transition-all ease-in-out duration-300 cursor-pointer">
