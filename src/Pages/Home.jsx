@@ -20,7 +20,9 @@ function Home() {
   };
 
   const getGameListByGenresId = (id) => {
-    console.log("GENRE ID", id);
+    if (!id) {
+      id = 4;
+    }
     GlobalApi.getGameListByGenreId(id).then((resp) => {
       setGameListByGenre(resp.data.results);
       console.log("Gamelist By genre id:", resp.data.results);
